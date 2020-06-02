@@ -159,7 +159,7 @@ async function writer(element, newText, speed, blinking){
         element.insertAdjacentHTML('afterend', '<span class="cursor">|</span>');
     }
 
-    let alert = document.getElementById("alert"); // Benötigt für XSplit Fix
+    let alert = document.getElementById("alert"); // Needed for XSplit fix
 
     for (let i = 0; i < oldText.length; i++) {
         element.innerText = element.innerText.substr(0, element.innerText.length - 1);
