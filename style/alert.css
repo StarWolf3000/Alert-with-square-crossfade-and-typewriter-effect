@@ -1,0 +1,38 @@
+#background {
+    background-image: url('../img/background.png');
+    font-family: monospace;
+    font-weight: 400;
+    width: 328px; /* Width/Height of the used background-image */
+    height: 137px;
+    padding-left: 3px;
+    padding-top: 6px;
+}
+
+#bottom {
+    width: 310px; /* Width/Height of the area which should contain the text for the type of alert e.g. Host/Follow/Alert */
+    height: 43px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Width/Height is set in the alert.html */
+#image {
+    position: absolute;
+    z-index: 1; /* Image of the user is above the background */
+}
+
+/* Width/Font-Size is set in the alert.html No need for height otherwise we can't determine scrollHeight needed to fit the text */
+#alert {
+    left: 100px;
+    top: 25px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1; /* Text of the alert is above the background */
+}
+
+.cursor {
+    font-family: monospace;
+    font-weight: bold;
+    color: #2E3D48;
+}
